@@ -13,7 +13,7 @@
         /* 字體顏色 */
         .text_color{
             /* color: red; */
-            color: rgba(11, 125, 179, 0.555);
+            color: rgb(11, 125, 179, 0.555);
             /* color: #00FF00; */
         }
         /* 文字對齊 */
@@ -71,11 +71,11 @@
             }
             /* 訪問過 */
             .a_style:visited{
-                color:yellow;
+                color:green;
             }
             /* 移入 */
             .a_style:hover{
-                color:green;
+                color:yellow;
             }
             /* 點下去 */
             .a_style:active{
@@ -103,6 +103,29 @@
                 /* 圖片 */
                 list-style-image: url("https://fakeimg.pl/30x30/");
             }
+            /* Table表格 */
+            .table_style{
+                /* 邊框合併 */
+                border-collapse: collapse;
+                width: 300px;
+                height: 300px;
+            }
+            .table_style td{
+                /* 水平 */
+                text-align: center;
+                /* 垂直 */
+                vertical-align: top;
+            }
+            /* 偶數行 */
+            .table_style tr:nth-child(even){
+                background-color: rgb(223, 100, 28) ;
+                color: white;
+            }
+            /* 奇數行 */
+            .table_style tr:nth-child(odd){
+                background-color: rgb(47, 153, 26, 0.767);
+                color: rgb(241, 227, 34);
+            }
     </style>
 </head>
 <body>
@@ -128,6 +151,44 @@
         <li>3</li>
         123
     </ul>
+    <table border="1" cellspacing="0" cellpadding="0" class="table_style">
+    <!-- tr*5>td{$$$}*5 -->
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>002</td>
+        <td>003</td>
+        <td>004</td>
+        <td>005</td>
+    </tr>
+    </table>
 </h1>
 </body>
 </html>
